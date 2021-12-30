@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /onepiece
+  port: 8090
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mydb?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: cailei666
+
+
+mybatis:
+  type-aliases-package: com.cailei.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+
+logging:
+  config: classpath:logback.xml
